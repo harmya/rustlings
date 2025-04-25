@@ -1,5 +1,9 @@
 fn bigger(a: i32, b: i32) -> i32 {
-    std::cmp::max(a, b)
+    if a > b {
+        a
+    } else {
+        b
+    }
 }
 
 fn main() {
